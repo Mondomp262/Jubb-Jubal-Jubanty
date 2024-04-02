@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>eCommerce template By Adobe Dreamweaver CC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
+<style>
+  /* Définition des couleurs de thème */
+  body {
+    background-color: #743334; /* Couleur de fond */
+  }
+  header, footer {
+    background-color: #5C2E2D; /* Rouge */
+    color: #fff; /* Texte blanc */
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards; /* Animation d'entrée pour le header et le footer */
+  }
+  section#offer {
+    background-color: #F32D02; /* Rouge */
+    color: #fff; /* Texte blanc */
+    opacity: 0;
+    animation: slideInBottom 1s ease-in-out 0.5s forwards; /* Animation d'entrée pour la section d'offre */
+  }
+  section.sidebar {
+    background-color: #28B463; /* Vert */
+    color: #2D0304; /* Texte blanc */
+    opacity: 0;
+    animation: slideInLeft 1s ease-in-out 1s forwards; /* Animation d'entrée pour la barre latérale */
+  }
+
+  /* Animation d'entrée pour les éléments de la galerie */
+  .productRow {
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+    animation: slideInRight 1s ease-in-out 1.5s forwards; /* Animation d'entrée pour la ligne de produits */
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideInBottom {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes slideInLeft {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  @keyframes slideInRight {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+</style>
+<link href="Les Pages/Le Livre/Sanstitre-1.html.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="mainWrapper">
+  <header> 
+    <!-- This is the header content. It contains Logo and links -->
+    <div id="logo"> 
+      <!-- <img src="logoImage.png" alt="sample logo"> -->
+      <!-- Company Logo text -->
+      Focus2024&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+    </div>
+    <div id="headerLinks"><a href="#" title="Login/Register">Connexion&nbsp;</a><a href="#" title="Cart">Part&nbsp;</a></div>
+  </header>
+  <section id="offer"> 
+    <!-- The offer section displays a banner text for promotions -->
+    <h2>Jubb Jubal Jubanty&nbsp;</h2>
+    <p>President Diomaye Faye Moy Defar Senegal&nbsp; &nbsp;</p>
+  </section>
+  <div id="content">
+    <section class="sidebar"> 
+      <!-- This adds a sidebar with 1 searchbox,2 menusets, each with 4 links -->
+      <input type="text"  id="search" value="search">
+      <div id="menubar">
+        <nav class="menu">
+          <h2>
+            <!-- Title for menuset 1 -->
+            MENU  1 
+          </h2>
+          <hr>
+          <ul>
+            <!-- List of links under menuset 1 -->
+            <li><a href="#" title="Link">Actus (Non disponible)&nbsp;&nbsp;</a></li>
+            <li><a href="#" title="Link">Li ma warr (Non disponible)</a></li>
+            <li><a href="#" title="Link">xam-xam (Non disponible)</a></li>
+            <li class="notimp"><!-- notimp class is applied to remove this link from the tablet and phone views --><a href="#"  title="Link">Youtube (Non disponible)</a></li>
+          </ul>
+        </nav>
+        <nav class="menu">
+          <h2>MENU  2 </h2>
+          <!-- Title for menuset 2 -->
+          <hr>
+          <ul>
+            <!--List of links under menuset 2 -->
+            <li><a href="#" title="Link">Non disponible&nbsp;</a></li>
+            <li><a href="#" title="Link">Non disponible</a></li>
+            <li><a href="#" title="Link">Non disponible</a></li>
+            <li class="notimp"><!-- notimp class is applied to remove this link from the tablet and phone views --><a href="#" title="Link">Non disponible</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="mainContent">
+      <div class="productRow"><!-- Each product row contains info of 3 elements -->
+        <article class="productInfo"><!-- Each individual product description -->
+          <div><a href="Les Pages/Le Livre/Pr Diomaye/Pr Diomaye.html"><img alt="sample" src="Ruchs/Images/IMG-20240329-WA0339.jpg"></a></div>
+          <p class="price">Pr Bassirou Diomaye Faye&nbsp;&nbsp;</p>
+          <p class="productContent">Le Programmme  &nbsp; </p>
+        </article>
+        <article class="productInfo"><!-- Each individual product description -->
+          <div><a href="Les Pages/Le Livre/Sanstitre-1.html"><img alt="sample" src="Ruchs/Images/E6CB7C1B-DAB9-4257-8B04-1D754F14D193.JPEG"></a></div>
+          <p class="price">Setal Sénégal</p>
+          <p class="productContent">Le Livre &nbsp;</p>
+        </article>
+      </div>
+      <!-- Ajouter le reste du contenu ici -->
+    </section>
+  </div>
+  <footer> 
+    <!-- This is the footer with default 3 divs -->
+    <div>
+      <blockquote>
+        <h6> La plateforme Jubb Jubal Bubanty offre une expérience immersive et informative dédiée à la vision du nouveau Président de la République du Sénégal, Son Excellence Djamal Fay, Bassirou Diomaye Faye. Avec un design élégant et une navigation fluide, notre site met en lumière les initiatives et les programmes visant à promouvoir la prospérité et le bien-être de la nation sénégalaise. **Contenu :** - **Accueil :** Découvrez une présentation détaillée de la vision présidentielle et des objectifs pour l'avenir du Sénégal, accompagnée de messages d'accueil en français et en wolof pour toucher tous les citoyens. - **Galerie :** Explorez une galerie visuelle captivante mettant en avant des initiatives clés, des événements marquants et des projets de développement, chacun accompagné d'une description détaillée et de liens pour en savoir plus. - **Informations :** Accédez à des ressources utiles et à des actualités concernant les actions gouvernementales, les programmes sociaux, et les projets de développement en cours dans le pays. - **Contact :** Restez en contact avec nous en utilisant notre formulaire de contact dédié pour poser des questions, partager vos commentaires ou demander des informations supplémentaires sur nos initiatives. **Engagement :** Nous nous engageons à promouvoir un Sénégal plus propre, plus prospère et plus durable pour tous. Rejoignez-nous dans notre mission en explorant notre plateforme, en vous tenant informé des progrès réalisés et en contribuant à notre vision commune d'un avenir meilleur pour le Sénégal.</h6>
+      </blockquote>
+    </div>
+    <div> </div>
+    <div class="footerlinks">
+      <p><a href="#+395510481640">Whatshapp&nbsp; </a></p>
+      <p><a href="#" title="Link">non disponible&nbsp;</a></p>
+      <p><a href="#" title="Link">non disponoible&nbsp;</a></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
